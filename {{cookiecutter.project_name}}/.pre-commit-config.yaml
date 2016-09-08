@@ -1,0 +1,18 @@
+-   repo: local
+    hooks:
+    -   id: mix-test
+        name: 'elixir: mixing tests'
+        entry: mix test
+        language: system
+        files: \.ex$
+    -   id: mix-test
+        name: 'elixir: mixing compile'
+        entry: mix compile
+        language: system
+        files: \.ex$
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: master
+    hooks:
+    -   id: trailing-whitespace
+    -   id: check-merge-conflict
+    -   id: check-yaml

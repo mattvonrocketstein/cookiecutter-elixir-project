@@ -1,0 +1,11 @@
+{
+    "project_dir_name": "elixir-project",
+    "project_name": "{{cookiecutter.project_dir_name}}",
+    "app_name": ":{{cookiecutter.project_name.lower().replace(' ', '').replace('-','')}}",
+    "module_name": "{%for x in cookiecutter.project_name.replace('-',' ').split()%}{{x.title()}}{%endfor%}",
+    "mix_task_name": "{{cookiecutter.module_name}}",
+    "module_file": "{{cookiecutter.module_name.lower()}}",
+    "project_short_description": "A short description of the project",
+    "version": "0.1.0",
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
