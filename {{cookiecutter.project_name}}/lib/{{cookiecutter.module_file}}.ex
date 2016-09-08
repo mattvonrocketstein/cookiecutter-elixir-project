@@ -1,8 +1,13 @@
+# See http://elixir-lang.org/docs/stable/elixir/Application.html
+# for more information on OTP Applications
+
 defmodule {{cookiecutter.module_name}} do
+  @moduledoc """
+  """
   use Application
 
-  # See http://elixir-lang.org/docs/stable/elixir/Application.html
-  # for more information on OTP Applications
+  @doc """
+  """
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
 

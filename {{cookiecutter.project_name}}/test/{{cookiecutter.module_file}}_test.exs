@@ -1,4 +1,7 @@
 defmodule {{cookiecutter.module_name}}Test do
+  @moduledoc """
+  """
+
   use ExUnit.Case
   doctest {{cookiecutter.module_name}}
 

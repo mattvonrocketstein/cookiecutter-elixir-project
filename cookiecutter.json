@@ -1,10 +1,13 @@
 {
     "project_dir_name": "elixir-project",
+    "github_username": "your_github_username",
     "project_name": "{{cookiecutter.project_dir_name}}",
-    "app_name": ":{{cookiecutter.project_name.lower().replace(' ', '').replace('-','')}}",
+    "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '').replace('-','')}}",
+    "app_name": ":{{cookiecutter.project_slug}}",
     "module_name": "{%for x in cookiecutter.project_name.replace('-',' ').split()%}{{x.title()}}{%endfor%}",
     "mix_task_name": "{{cookiecutter.module_name}}",
     "module_file": "{{cookiecutter.module_name.lower()}}",
+    "escript_name": "{{cookiecutter.project_slug}}",
     "project_short_description": "A short description of the project",
     "version": "0.1.0",
     "_extensions": ["jinja2_time.TimeExtension"]
