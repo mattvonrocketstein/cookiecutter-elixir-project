@@ -1,4 +1,4 @@
-# ProjectName
+# {{cookiecutter.project_name}}
 
 **TODO: Add description**
 
@@ -6,11 +6,11 @@
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add `project_slug` to your list of dependencies in `mix.exs`:
+  1. Add `{{cookiecutter.project_name}}` to your list of dependencies in `mix.exs`:
 
     ```elixir
     def deps do
-      [{:project_slug, "~> 0.1.0"}]
+      [{:{{cookiecutter.project_name}}, "~> 0.1.0"}]
     end
     ```
 
@@ -18,7 +18,6 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
     ```elixir
     def application do
-      [applications: [:project_slug]]
+      [applications: [{{cookiecutter.app_name}}]]
     end
     ```
-

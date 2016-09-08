@@ -8,14 +8,12 @@ It's true that `mix new` already generates project skeletons already, and actual
 
 Install the `cookiecutter` command line:
 
-    :::bash
     $ pip install cookiecutter`    
 
 ## Usage
 
 To generate a new elixir project from my template you'll have to answer various questions about your project-name and so on.  To initiate that process, run the cookiecutter program on this repository
 
-    :::bash
     $ cookiecutter gh:mattvonrocketstein/cookiecutter-elixir-project`    
 
 ## License
